@@ -4,9 +4,11 @@ export const STORE_CONFIG = {
   taglineAr: "توريد الأدوية والمنتجات الصيدلانية والمستلزمات الطبية",
   descriptionAr: "المنصة الإلكترونية الأولى لتصفح المنتجات الصيدلانية والطبية، وإرسال الطلبات مباشرة وصياغتها بدقة عبر WhatsApp.",
   
-  // Official Centralized WhatsApp Configuration
+  // Official Centralized WhatsApp & Admin Credentials
   whatsappNumber: import.meta.env.VITE_WHATSAPP_NUMBER || "967736577725",
   whatsappDisplay: "+967 736 577 725",
+  adminEmail: import.meta.env.VITE_ADMIN_EMAIL || "mohammed.f.saqqaf@gmail.com",
+  adminPassword: import.meta.env.VITE_ADMIN_PASSWORD || "772522233",
   
   phoneDisplay: "+967 736 577 725",
   email: "info@heyba-pharma.com",
