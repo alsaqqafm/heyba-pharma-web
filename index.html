@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+    
+    <!-- Primary SEO Meta Tags -->
+    <title>Heyba Pharma | هيبا فارما — المنتجات الطبية والصيدلانية وطلب المنتجات عبر WhatsApp</title>
+    <meta name="title" content="Heyba Pharma | هيبا فارما — المنتجات الطبية والصيدلانية" />
+    <meta name="description" content="منصة هيبا فارما (Heyba Pharma) الرسمية لتصفح وطلب الأصناف الصيدلانية، الأدوية، المكملات الغذائية، والمستلزمات الطبية مع خدمة الطلب المباشر عبر WhatsApp وإمكانية الدفع النقدي والآجل." />
+    <meta name="keywords" content="Heyba Pharma, هيبا فارما, صيدلية, أدوية, مستلزمات طبية, فيتامينات, اليمن, صيدليات, توريد دوائي, طلبات واتساب" />
+    <meta name="author" content="Heyba Pharma" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://heyba-pharma.com/" />
+    <meta name="theme-color" content="#0D9488" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://heyba-pharma.com/" />
+    <meta property="og:title" content="Heyba Pharma | هيبا فارما — توريد وطلب المنتجات الصيدلانية" />
+    <meta property="og:description" content="تصفح قائمة الأدوية والمستلزمات الطبية من هيبا فارما مع حسابات البونص الفورية والتوصيل المباشر برقم WhatsApp." />
+    <meta property="og:image" content="https://heyba-pharma.com/logo.svg" />
+    <meta property="og:locale" content="ar_YE" />
+    <meta property="og:site_name" content="Heyba Pharma" />
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://heyba-pharma.com/" />
+    <meta name="twitter:title" content="Heyba Pharma | هيبا فارما" />
+    <meta name="twitter:description" content="كتالوج منتجات دوائية وطبية احترافي مع طلب آمن ومباشر عبر WhatsApp." />
+    <meta name="twitter:image" content="https://heyba-pharma.com/logo.svg" />
+
+    <!-- PWA Manifest & App Icons -->
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="apple-touch-icon" href="/favicon.svg" />
+
+    <!-- Google Fonts: Cairo & Readex Pro -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Readex+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Schema.org JSON-LD Structured Data for Pharmacy / Medical Store -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Pharmacy",
+      "name": "Heyba Pharma | هيبا فارما",
+      "alternateName": "هيبا فارما",
+      "url": "https://heyba-pharma.com",
+      "logo": "https://heyba-pharma.com/logo.svg",
+      "image": "https://heyba-pharma.com/logo.svg",
+      "description": "منصة وتوريد المنتجات الصيدلانية، الأدوية والمستلزمات الطبية.",
+      "telephone": "+967736577725",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "YE"
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "08:00",
+        "closes": "22:00"
+      },
+      "sameAs": [
+        "https://wa.me/967736577725"
+      ]
+    }
+    </script>
+  </head>
+  <body class="bg-slate-50 text-slate-900 font-cairo antialiased selection:bg-teal-500 selection:text-white min-h-screen flex flex-col">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+
+    <!-- Register PWA Service Worker -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js').then(reg => {
+            console.log('PWA Service Worker registered:', reg.scope);
+          }).catch(err => {
+            console.warn('PWA Service Worker registration failed:', err);
+          });
+        });
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+{
+  "name": "Heyba Pharma | هيبا فارما",
+  "short_name": "Heyba Pharma",
+  "description": "متجر وم المنصة الطبية والصيدلانية الإلكترونية لتوريد الأدوية والمستلزمات الطبية بسهولة عبر WhatsApp.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0B192C",
+  "theme_color": "#0D9488",
+  "orientation": "portrait",
+  "lang": "ar",
+  "dir": "rtl",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "48x48 72x72 96x96 128x128 256x256",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/favicon.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
